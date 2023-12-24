@@ -1,0 +1,35 @@
+<app-carga (mandarAlumno)="nuevosAlumnos($event)">
+
+</app-carga>
+
+<div class="listaAlumnos card mt-5">
+    <div class="card-header bg-dark text-white">
+        <h5 class="card-title">Listado de alumnos</h5>
+    </div>
+    <div class="card-body">
+
+        @if (listaAlumnos.length!=0) {
+        <div class="contenedorLista">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (alumno of listaAlumnos; track $index) {
+                    <tr>
+                        <td>{{$index}} </td>
+                        <td>{{alumno | uppercase}}</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        }
+        @else {
+        <p style="text-align:center;">No hay alumnos cargados </p>
+        }
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.espacioCarga {
+    background-color: rgba(255, 166, 0, 0.9);
+    width: 100%;
+    min-height: 100px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.espacioCarga .row {
+    width:800px;
+}
+
+.espacioCarga .boton {
+    margin-right: 10px; /* Ajusta el espacio horizontal según tus preferencias */
+}

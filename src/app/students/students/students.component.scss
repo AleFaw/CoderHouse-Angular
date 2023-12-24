@@ -1,0 +1,18 @@
+.listaAlumnos {
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* Esto centrará horizontalmente */
+}
+
+.table {
+    text-align: center;
+}
+
+.contenedorLista {
+    max-height: 500px;
+    overflow-y: auto;
+    display: block;
+}
